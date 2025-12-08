@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Books List</title>
-
+     <link rel="icon" type="image/png" href="images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -83,17 +83,35 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <img src="images/logo.png" alt="acthers logo" class="logo-img">
-        <div class="collapse navbar-collapse justify-content-center">
+
+        <!-- Logo for mobile -->
+        <a class="navbar-brand mx-auto d-lg-none" href="#">
+            <img src="images/logo.png" alt="acthers logo" class="logo-img">
+        </a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavBooks"
+            aria-controls="navbarNavBooks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Links and logo for large screens -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavBooks">
+            <a class="navbar-brand d-none d-lg-block me-4" href="#">
+                <img src="images/logo.png" alt="acthers logo" class="logo-img">
+            </a>
+
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                <li class="nav-item"><a class="nav-link active" href="books.html">Books</a></li>
                 <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
             </ul>
         </div>
+
     </div>
 </nav>
+
 
 <div class="container mt-4">
     <h2 class="section-title mb-3">Books List</h2>
@@ -347,6 +365,9 @@
 <footer class="text-center p-3 mt-4" style="background:#6D4C41;color:white;">
     © 2025 Acthers | All Rights Reserved
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- FILTER SCRIPT -->
 <script>
