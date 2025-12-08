@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Members</title>
-
+     <link rel="icon" type="image/png" href="images/logo.png">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -101,21 +101,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Updated system name -->
-           <img src="images/logo.png" alt="acthers logo" class="logo-img">
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
 
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="members.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
-                </ul>
-            </div>
+        <!-- Logo for mobile -->
+        <a class="navbar-brand mx-auto d-lg-none" href="#">
+            <img src="images/logo.png" alt="acthers logo" class="logo-img">
+        </a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavBooks"
+            aria-controls="navbarNavBooks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <!-- Links and logo for large screens -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavBooks">
+            <a class="navbar-brand d-none d-lg-block me-4" href="#">
+                <img src="images/logo.png" alt="acthers logo" class="logo-img">
+            </a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                <li class="nav-item"><a class="nav-link active" href="members.html">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+            </ul>
         </div>
-    </nav>
+
+    </div>
+</nav>
+
 
     <!-- PAGE CONTENT -->
     <div class="container mt-4">
@@ -160,63 +176,64 @@
             </div>
 
             <!-- row 7 -->
-    <div class="row justify-content-around">
-        <div class="col-md-4 member-box"><h4>Liam O'Connor</h4>liam@gmail.com<br>0112345678</div>
-        <div class="col-md-4 member-box"><h4>Emma Johansson</h4>emma@gmail.com<br>0123456789</div>
-    </div>
+            <div class="row justify-content-around">
+                <div class="col-md-4 member-box"><h4>Liam O'Connor</h4>liam@gmail.com<br>0112345678</div>
+                <div class="col-md-4 member-box"><h4>Emma Johansson</h4>emma@gmail.com<br>0123456789</div>
+            </div>
 
-    <!-- row 8 -->
-    <div class="row justify-content-between">
-        <div class="col-md-4 member-box"><h4>Noah Smith</h4>noah@gmail.com<br>0134567890</div>
-        <div class="col-md-4 member-box"><h4>Isabella Brown</h4>isabella@gmail.com<br>0145678901</div>
-    </div>
+            <!-- row 8 -->
+            <div class="row justify-content-between">
+                <div class="col-md-4 member-box"><h4>Noah Smith</h4>noah@gmail.com<br>0134567890</div>
+                <div class="col-md-4 member-box"><h4>Isabella Brown</h4>isabella@gmail.com<br>0145678901</div>
+            </div>
 
-    <!-- row 9 -->
-    <div class="row justify-content-evenly">
-        <div class="col-md-4 member-box"><h4>Oliver Wilson</h4>oliver@gmail.com<br>0156789012</div>
-        <div class="col-md-4 member-box"><h4>Charlotte Taylor</h4>charlotte@gmail.com<br>0167890123</div>
-    </div>
+            <!-- row 9 -->
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 member-box"><h4>Oliver Wilson</h4>oliver@gmail.com<br>0156789012</div>
+                <div class="col-md-4 member-box"><h4>Charlotte Taylor</h4>charlotte@gmail.com<br>0167890123</div>
+            </div>
 
-    <!-- row 10 -->
-    <div class="row justify-content-around">
-        <div class="col-md-4 member-box"><h4>Elijah Martinez</h4>elijah@gmail.com<br>0178901234</div>
-        <div class="col-md-4 member-box"><h4>Ava Anderson</h4>ava@gmail.com<br>0189012345</div>
-    </div>
+            <!-- row 10 -->
+            <div class="row justify-content-around">
+                <div class="col-md-4 member-box"><h4>Elijah Martinez</h4>elijah@gmail.com<br>0178901234</div>
+                <div class="col-md-4 member-box"><h4>Ava Anderson</h4>ava@gmail.com<br>0189012345</div>
+            </div>
 
-    <!-- row 11 -->
-    <div class="row justify-content-between">
-        <div class="col-md-4 member-box"><h4>James Thomas</h4>james@gmail.com<br>0190123456</div>
-        <div class="col-md-4 member-box"><h4>Mia Robinson</h4>mia@gmail.com<br>0101234567</div>
-    </div>
+            <!-- row 11 -->
+            <div class="row justify-content-between">
+                <div class="col-md-4 member-box"><h4>James Thomas</h4>james@gmail.com<br>0190123456</div>
+                <div class="col-md-4 member-box"><h4>Mia Robinson</h4>mia@gmail.com<br>0101234567</div>
+            </div>
 
-    <!-- row 12 -->
-    <div class="row justify-content-evenly">
-        <div class="col-md-4 member-box"><h4>Benjamin Lewis</h4>benjamin@gmail.com<br>0112348901</div>
-        <div class="col-md-4 member-box"><h4>Harper Walker</h4>harper@gmail.com<br>0123459012</div>
-    </div>
+            <!-- row 12 -->
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 member-box"><h4>Benjamin Lewis</h4>benjamin@gmail.com<br>0112348901</div>
+                <div class="col-md-4 member-box"><h4>Harper Walker</h4>harper@gmail.com<br>0123459012</div>
+            </div>
 
-    <!-- row 13 -->
-    <div class="row justify-content-around">
-        <div class="col-md-4 member-box"><h4>Lucas Hall</h4>lucas@gmail.com<br>0134560123</div>
-        <div class="col-md-4 member-box"><h4>Evelyn Young</h4>evelyn@gmail.com<br>0145671234</div>
-    </div>
+            <!-- row 13 -->
+            <div class="row justify-content-around">
+                <div class="col-md-4 member-box"><h4>Lucas Hall</h4>lucas@gmail.com<br>0134560123</div>
+                <div class="col-md-4 member-box"><h4>Evelyn Young</h4>evelyn@gmail.com<br>0145671234</div>
+            </div>
 
-    <!-- row 14 -->
-    <div class="row justify-content-between">
-        <div class="col-md-4 member-box"><h4>Mason Hernandez</h4>mason@gmail.com<br>0156782345</div>
-        <div class="col-md-4 member-box"><h4>Abigail King</h4>abigail@gmail.com<br>0167893456</div>
-    </div>
+            <!-- row 14 -->
+            <div class="row justify-content-between">
+                <div class="col-md-4 member-box"><h4>Mason Hernandez</h4>mason@gmail.com<br>0156782345</div>
+                <div class="col-md-4 member-box"><h4>Abigail King</h4>abigail@gmail.com<br>0167893456</div>
+            </div>
 
-    <!-- row 15 -->
-    <div class="row justify-content-evenly">
-        <div class="col-md-4 member-box"><h4>Ethan Wright</h4>ethan@gmail.com<br>0178904567</div>
-        <div class="col-md-4 member-box"><h4>Emily Scott</h4>emily@gmail.com<br>0189015678</div>
-    </div>
-</div>
-</div>
+            <!-- row 15 -->
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 member-box"><h4>Ethan Wright</h4>ethan@gmail.com<br>0178904567</div>
+                <div class="col-md-4 member-box"><h4>Emily Scott</h4>emily@gmail.com<br>0189015678</div>
+            </div>
+        </div>
+        </div>
 
     <footer class="site-footer">
         © 2025 Acthers | All Rights Reserved
     </footer>
+
 </body>
 </html>
