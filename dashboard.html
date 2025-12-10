@@ -10,13 +10,13 @@
 
     <style>
         body {
-            background-color: #F5EDE2; /* Beige */
+            background-color: #F5EDE2; 
             font-family: Arial, sans-serif;
         }
 
-        /* NAVBAR */
+      /*Navigation Bar*/
         .navbar {
-            background-color: #6D4C41 !important; /* Brown */
+            background-color: #6D4C41 !important; 
             padding: 12px 0;
         }
 
@@ -55,7 +55,7 @@
             height: auto;
         }
 
-        /* CARDS */
+        /* Cards */
         .card {
             border: none;
             border-radius: 10px;
@@ -85,7 +85,7 @@
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
 
-        /* FOOTER */
+        /* Footer */
         .site-footer {
             text-align: center;
             padding: 15px 0;
@@ -104,7 +104,7 @@
 
 <body>
 
-<!-- NAVBAR -->
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
 
@@ -140,7 +140,7 @@
 
     <h2 class="section-title mb-4">Dashboard Overview</h2>
 
-    <!-- INFO CARDS -->
+    <!-- Info Cards -->
     <div class="row">
 
         <div class="col-md-4 mb-3">
@@ -187,7 +187,7 @@
 
     </div>
 
-    <!-- CHART PLACEHOLDER -->
+    <!-- Chart Placeholder -->
     <h4 class="section-title mt-4">Book Category Chart</h4>
     <div id="chart-box"></div>
 
@@ -197,7 +197,7 @@
   © 2025 Acthers | All Rights Reserved
 </footer>
 
-<!-- SCRIPTS -->
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
@@ -212,7 +212,7 @@
 
   const chartBox = document.getElementById('chart-box');
 
-  // 1. Books by Category (Bar Chart)
+  // 1. Bar Chart
   const ctxBooks = createChartCanvas(chartBox);
   new Chart(ctxBooks, {
     type: 'bar',
@@ -223,7 +223,7 @@
     options: { responsive: true, plugins: { legend: { display: false }, title: { display: true, text: 'Monthly Borrowed Books per Genre' } }, scales: { y: { beginAtZero: true } } }
   });
 
-  // 2. Monthly Borrowed Books (Line Chart)
+  // 2. Line Chart
   const ctxMonthly = createChartCanvas(chartBox);
   new Chart(ctxMonthly, {
     type: 'line',
@@ -234,7 +234,7 @@
     options: { responsive:true, plugins:{ title:{ display:true, text:'Monthly Borrowed Books' } }, scales:{ y:{ beginAtZero:true } } }
   });
 
-  // 3. Member Distribution by Type (Doughnut Chart)
+  // 3. Doughnut Chart
   const ctxMembers = createChartCanvas(chartBox);
   new Chart(ctxMembers, {
     type:'doughnut',
